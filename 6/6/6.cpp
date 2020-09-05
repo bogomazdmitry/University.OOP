@@ -25,7 +25,7 @@ public:
     unsigned short get_year() const;
 };
 
-class UniversityTeacher : public Human
+class UniversityTeacher : virtual public Human
 {
 private:
     string position; 
@@ -45,7 +45,7 @@ public:
     text get_listOfScientificPapers() const;
 };
 
-class CommissionMember : public Human
+class CommissionMember : virtual public Human
 {
 private:
     string nameOfTheCommission;

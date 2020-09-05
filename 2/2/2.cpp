@@ -5,20 +5,20 @@
 class data
 {
 private:
-    unsigned short day;
-    unsigned short month;
-    unsigned short year;
+    short day;
+    short month;
+    short year;
 public:
     data();
-    data(unsigned short new_day, unsigned short new_month, unsigned short new_year);
+    data( short new_day,  short new_month,  short new_year);
 
-    void set_day (const unsigned short new_data);
-    void set_month (const unsigned short new_month);
-    void set_year (const unsigned short new_year);
+    void set_day (const short new_data);
+    void set_month (const short new_month);
+    void set_year (const short new_year);
 
-    const unsigned short get_day() const;
-    const unsigned short get_month() const;
-    const unsigned short get_year() const;
+    const short get_day() const;
+    const short get_month() const;
+    const short get_year() const;
 
     void show1(std::ostream& os = std::cout) const;
     void show2(std::ostream& os = std::cout) const;
@@ -62,22 +62,22 @@ data::data()
 {
 }
 
-data::data(unsigned short new_day, unsigned short new_month, unsigned short new_year)
+data::data(short new_day,  short new_month,  short new_year)
 {
     set_day(new_day);
     set_month(new_month);
     set_year(new_year);
 }
 
-void data::set_day(const unsigned short new_data)
+void data::set_day(const  short new_data)
 {
     if (new_data <= 31 && new_data >= 1)
         day = new_data;
     else        
-        throw std::exception("Неправиьно введена день");\
+        throw std::exception("Неправиьно введена день");
 }
 
-void data::set_month(const unsigned short new_month)
+void data::set_month(const  short new_month)
 {
     if (new_month <= 12 && new_month >= 1)
         month = new_month;
@@ -85,7 +85,7 @@ void data::set_month(const unsigned short new_month)
         throw std::exception("Неправиьно введена месяц");
 }
 
-void data::set_year(const unsigned short new_year)
+void data::set_year(const  short new_year)
 {
     if (new_year >= 1)
         year = new_year;
@@ -93,17 +93,17 @@ void data::set_year(const unsigned short new_year)
         throw std::exception("Неправиьно введена год");
 }
 
-const unsigned short data::get_day() const
+const  short data::get_day() const
 {
     return day;
 }
 
-const unsigned short data::get_month() const
+const  short data::get_month() const
 {
     return month;
 }
 
-const unsigned short data::get_year() const
+const  short data::get_year() const
 {
     return year;
 }
@@ -121,9 +121,9 @@ void data::show2(std::ostream& os) const
 
 std::istream& operator>>(std::istream& is, data& d)
 {
-    unsigned short temp_day;
-    unsigned short temp_month;
-    unsigned short temp_year;
+    short temp_day;
+    short temp_month;
+    short temp_year;
     is >> temp_day >> temp_month >> temp_year;
     d.set_day(temp_day);
     d.set_month(temp_month);
