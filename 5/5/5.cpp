@@ -7,6 +7,8 @@
 #include "Car.h"
 #include "Cart.h"
 
+
+
 int main()
 {
 	setlocale(LC_ALL, "Russian");
@@ -40,10 +42,8 @@ int main()
 	std::cout << "Введите длину пути в километрах: " << std::endl;
 	double KM;
 	std::cin >> KM;
-
-	std::cout << "Транспорт: " << std::setw(21) << vector_trans[choise]->nameOfTransport() << std::endl;
-	std::cout << "Цена: " << std::setw(26) << vector_trans[choise]->costOfTravel(KM) << std::endl;
-	std::cout << "Время: " << std::setw(21) << vector_trans[choise]->timeOfTravel(KM) << std::endl;
+	vector_trans[choise]->show(KM);
+	
 	system("pause");
 	return 0;
 }

@@ -5,7 +5,7 @@ Bicycle::Bicycle() :
 {
 }
 
-std::string Bicycle::nameOfTransport()
+std::string Bicycle::nameOfTransport() const
 {
 	return "Велосипед";
 }

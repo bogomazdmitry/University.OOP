@@ -5,7 +5,7 @@ Car::Car():
 {
 }
 
-std::string Car::nameOfTransport()
+std::string Car::nameOfTransport() const
 {
 	return "Машина";
 }

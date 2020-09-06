@@ -5,7 +5,7 @@ Cart::Cart() :
 {
 }
 
-std::string Cart::nameOfTransport()
+std::string Cart::nameOfTransport() const
 {
 	return "Повозка";
 }

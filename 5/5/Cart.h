@@ -6,5 +6,5 @@ class Cart : public Transport
 {
 public:
 	Cart();
-	virtual std::string nameOfTransport();
+	virtual std::string nameOfTransport() const;
 };

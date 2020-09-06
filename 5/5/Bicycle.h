@@ -6,5 +6,5 @@ class Bicycle : public Transport
 {
 public:
 	Bicycle();
-	virtual std::string nameOfTransport();
+	virtual std::string nameOfTransport() const;
 };
