@@ -1,6 +1,7 @@
-/*/Debag/
-/*/*/Debag/
+/*/Debug/
+/*/*/Debug/
 /.vs/
 /*/.vs/
-/Debag/
-/*/main
+/Debug/
+/*/x64/
+/*/*/x64/
