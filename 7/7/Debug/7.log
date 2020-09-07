@@ -1,0 +1,7 @@
+﻿  7.cpp
+D:\Учёба\3 семестр\ООП\University.OOP\7\7\7.cpp(22,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Учёба\3 семестр\ООП\University.OOP\7\7\7.cpp(31,28): warning C4018: >: несоответствие типов со знаком и без знака
+  Car.cpp
+  RentalWithDriverTransport.cpp
+  Создание кода...
+  7.vcxproj -> D:\Учёба\3 семестр\ООП\University.OOP\7\Debug\7.exe
