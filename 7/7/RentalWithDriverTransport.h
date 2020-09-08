@@ -5,9 +5,9 @@
 class RentalWithDriverTransport : public Transport
 {
 private:
-	double costOfOneKM;;
+	double costOfOneKM;
 public:
-	RentalWithDriverTransport(double costOfOneKN, double speed);
+	RentalWithDriverTransport(double costOfOneKM, double speed);
 
 	double costOfTravelOfRentalWithDriver(double pathLength) const;
 	virtual void show(double pathLength) const;

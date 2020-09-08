@@ -1,7 +1,7 @@
 #include "RentalTransport.h"
 
-RentalTransport::RentalTransport(double costOfOneKN, double speed) :
-	costOfOneKM(costOfOneKN),
+RentalTransport::RentalTransport(double costOfOneKM, double speed) :
+	costOfOneKM(costOfOneKM),
 	Transport(speed)
 {
 }
